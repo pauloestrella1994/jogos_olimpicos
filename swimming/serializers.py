@@ -19,6 +19,11 @@ class SwimmingAthletesSerializer(serializers.ModelSerializer):
             'unit_measurement',
         ]
 
+    def validate(self, data):
+        competition_end_date = data["competition"].end_date
+        if competition_end_date:
+            raise serializers.ValidationError("The competition is over")
+        return data
 
 class SwimmingCompetitionSerializer(serializers.ModelSerializer):
     athletes = SwimmingAthletesSerializer(many=True, read_only=True, source='competition_id')
