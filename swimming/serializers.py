@@ -1,14 +1,19 @@
 from django.db.models import fields
-from rest_framework import serializers
+from rest_framework import serializers, validators
 from .models import SwimmingAthletes, SwimmingCompetition
 
 
 class SwimmingAthletesSerializer(serializers.ModelSerializer):
     class Meta:
         model = SwimmingAthletes
+        validators = [
+            validators.UniqueTogetherValidator(
+                queryset=SwimmingAthletes.objects.all(),
+                fields=["competition", "athlete"]
+        )]
         fields = [
             'id',
-            'competition_id',
+            'competition',
             'athlete',
             'value',
             'unit_measurement',
@@ -27,3 +32,11 @@ class SwimmingCompetitionSerializer(serializers.ModelSerializer):
             'end_date',
             'athletes',
         ]
+    
+    def validate(self, data):
+        start_date = data.get("start_date", self.instance.start_date)
+        end_date = data.get("end_date", None)
+            
+        if start_date > end_date:
+            raise serializers.ValidationError("Start date competition can't be later then end date")
+        return data
