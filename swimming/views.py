@@ -5,11 +5,11 @@ from .models import Swimming, Competition
 from .serializers import CompetitionSerializer, SwimmingSerializer
 
 
-class SwimmingCompetitionView(generics.ListCreateAPIView):
+class SwimmingAthletesView(generics.ListCreateAPIView):
     queryset = Swimming.objects.all()
     serializer_class = SwimmingSerializer
 
-class CompetitionView(generics.ListCreateAPIView):
+class SwimmingCompetitionView(generics.ListCreateAPIView):
     queryset = Competition.objects.all()
     serializer_class = CompetitionSerializer
 
