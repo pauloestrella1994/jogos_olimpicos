@@ -16,7 +16,7 @@ class SwimmingAthletesSerializer(serializers.ModelSerializer):
 
 
 class SwimmingCompetitionSerializer(serializers.ModelSerializer):
-    athletes = SwimmingAthletesSerializer(many=True, read_only=True)
+    athletes = SwimmingAthletesSerializer(many=True, read_only=True, source='competition_id')
 
     class Meta:
         model = SwimmingCompetition
