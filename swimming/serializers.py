@@ -6,13 +6,13 @@ from .models import SwimmingAthletes, SwimmingCompetition
 class SwimmingAthletesSerializer(serializers.ModelSerializer):
     class Meta:
         model = SwimmingAthletes
-        fields = (
+        fields = [
             'id',
             'competition_id',
             'athlete',
             'value',
             'unit_measurement',
-        )
+        ]
 
 
 class SwimmingCompetitionSerializer(serializers.ModelSerializer):
@@ -20,10 +20,10 @@ class SwimmingCompetitionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SwimmingCompetition
-        fields = (
+        fields = [
             'id',
             'competition_name',
             'start_date',
             'end_date',
             'athletes',
-        )
+        ]
