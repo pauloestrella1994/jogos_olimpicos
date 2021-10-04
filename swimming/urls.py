@@ -7,7 +7,7 @@ from rest_framework import routers
 
 
 router = routers.DefaultRouter()
-router.register(r'swimming_athletes', SwimmingAthletesViewSet)
+router.register(r'swimming-athletes', SwimmingAthletesViewSet)
 router.register(r'swimming-competition', SwimmingCompetitionViewSet)
 
 urlpatterns = [
