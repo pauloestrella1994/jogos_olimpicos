@@ -1,11 +1,11 @@
 from django.db.models import fields
 from rest_framework import serializers
-from .models import Competition, Swimming
+from .models import SwimmingAthletes, SwimmingCompetition
 
 
-class SwimmingSerializer(serializers.ModelSerializer):
+class SwimmingAthletesSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Swimming
+        model = SwimmingAthletes
         fields = (
             'id',
             'competition_id',
@@ -15,11 +15,11 @@ class SwimmingSerializer(serializers.ModelSerializer):
         )
 
 
-class CompetitionSerializer(serializers.ModelSerializer):
-    athletes = SwimmingSerializer(many=True, read_only=True)
+class SwimmingCompetitionSerializer(serializers.ModelSerializer):
+    athletes = SwimmingAthletesSerializer(many=True, read_only=True)
 
     class Meta:
-        model = Competition
+        model = SwimmingCompetition
         fields = (
             'id',
             'competition_name',

@@ -1,59 +1,59 @@
 [
     {
-        "model": "swimming.Swimming",
+        "model": "swimming.SwimmingAthletes",
         "pk": 1,
         "fields":{
-            "competition_id": 1,
+            "competition": 1,
             "athlete": "Cesar Cielo",
             "value": 10.235,
             "unit_measurement": "s"
         }
     },
     {
-        "model": "swimming.Swimming",
+        "model": "swimming.SwimmingAthletes",
         "pk": 2,
         "fields":{
-            "competition_id": 1,
+            "competition": 1,
             "athlete": "Michael Phelps",
             "value": 9.235,
             "unit_measurement": "s"
         }
     },
     {
-        "model": "swimming.Swimming",
+        "model": "swimming.SwimmingAthletes",
         "pk": 3,
         "fields":{
-            "competition_id": 2,
+            "competition": 2,
             "athlete": "Xuxa",
             "value": 12.235,
             "unit_measurement": "s"
         }
     },
     {
-        "model": "swimming.Swimming",
+        "model": "swimming.SwimmingAthletes",
         "pk": 4,
         "fields":{
-            "competition_id": 2,
+            "competition": 2,
             "athlete": "Usain Bolt",
             "value": 8.235,
             "unit_measurement": "s"
         }
     },
     {
-        "model": "swimming.Swimming",
+        "model": "swimming.SwimmingAthletes",
         "pk": 5,
         "fields":{
-            "competition_id": 3,
+            "competition": 3,
             "athlete": "João daas Neves",
             "value": 15.235,
             "unit_measurement": "s"
         }
     },
     {
-        "model": "swimming.Swimming",
+        "model": "swimming.SwimmingAthletes",
         "pk": 6,
         "fields":{
-            "competition_id": 3,
+            "competition": 3,
             "athlete": "Maguila",
             "value": 2.35,
             "unit_measurement": "s"

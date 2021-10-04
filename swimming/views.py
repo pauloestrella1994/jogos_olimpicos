@@ -1,15 +1,15 @@
 from django.shortcuts import render
 from rest_framework import generics
 
-from .models import Swimming, Competition
-from .serializers import CompetitionSerializer, SwimmingSerializer
+from .models import SwimmingCompetition, SwimmingAthletes
+from .serializers import SwimmingAthletesSerializer, SwimmingCompetitionSerializer
 
 
 class SwimmingAthletesView(generics.ListCreateAPIView):
-    queryset = Swimming.objects.all()
-    serializer_class = SwimmingSerializer
+    queryset = SwimmingAthletes.objects.all()
+    serializer_class = SwimmingAthletesSerializer
 
 class SwimmingCompetitionView(generics.ListCreateAPIView):
-    queryset = Competition.objects.all()
-    serializer_class = CompetitionSerializer
+    queryset = SwimmingCompetition.objects.all()
+    serializer_class = SwimmingCompetitionSerializer
 
