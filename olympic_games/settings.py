@@ -28,7 +28,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_filters',
     'rest_framework',
-    'results',
+    'dart_throw',
+    'swimming',
 ]
 
 MIDDLEWARE = [
