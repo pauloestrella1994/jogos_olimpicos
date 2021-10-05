@@ -1,0 +1,122 @@
+[
+    {
+        "model": "dart_throw.DartThrowAthletes",
+        "pk": 1,
+        "fields":{
+            "competition": 1,
+            "athlete": "Joao dos dardos",
+            "value": 80.235,
+            "unit_measurement": "m"
+        }
+    },
+    {
+        "model": "dart_throw.DartThrowAthletes",
+        "pk": 1,
+        "fields":{
+            "competition": 1,
+            "athlete": "Joao dos dardos",
+            "value": 70.235,
+            "unit_measurement": "m"
+        }
+    },
+    {
+        "model": "dart_throw.DartThrowAthletes",
+        "pk": 2,
+        "fields":{
+            "competition": 1,
+            "athlete": "Michael dos dardos",
+            "value": 90.235,
+            "unit_measurement": "s"
+        }
+    },
+    {
+        "model": "dart_throw.DartThrowAthletes",
+        "pk": 2,
+        "fields":{
+            "competition": 1,
+            "athlete": "Michael dos dardos",
+            "value": 100.235,
+            "unit_measurement": "m"
+        }
+    },
+    {
+        "model": "dart_throw.DartThrowAthletes",
+        "pk": 3,
+        "fields":{
+            "competition": 2,
+            "athlete": "Robson dos dardos",
+            "value": 55.235,
+            "unit_measurement": "m"
+        }
+    },
+    {
+        "model": "dart_throw.DartThrowAthletes",
+        "pk": 3,
+        "fields":{
+            "competition": 2,
+            "athlete": "Robson dos dardos",
+            "value": 53.235,
+            "unit_measurement": "m"
+        }
+    },
+    {
+        "model": "dart_throw.DartThrowAthletes",
+        "pk": 4,
+        "fields":{
+            "competition": 2,
+            "athlete": "Usain Bolt dos dardos",
+            "value": 32.235,
+            "unit_measurement": "m"
+        }
+    },
+    {
+        "model": "dart_throw.DartThrowAthletes",
+        "pk": 4,
+        "fields":{
+            "competition": 2,
+            "athlete": "Usain Bolt dos dardos",
+            "value": 47.235,
+            "unit_measurement": "m"
+        }
+    },
+    {
+        "model": "dart_throw.DartThrowAthletes",
+        "pk": 5,
+        "fields":{
+            "competition": 3,
+            "athlete": "João das Neves dos dardos",
+            "value": 27.235,
+            "unit_measurement": "m"
+        }
+    },
+    {
+        "model": "dart_throw.DartThrowAthletes",
+        "pk": 5,
+        "fields":{
+            "competition": 3,
+            "athlete": "João das Neves dos dardos",
+            "value": 87.235,
+            "unit_measurement": "m"
+        }
+    },
+    {
+        "model": "dart_throw.DartThrowAthletes",
+        "pk": 6,
+        "fields":{
+            "competition": 3,
+            "athlete": "Maguila dos dardos",
+            "value": 67.35,
+            "unit_measurement": "m"
+        }
+    },
+    {
+        "model": "dart_throw.DartThrowAthletes",
+        "pk": 6,
+        "fields":{
+            "competition": 3,
+            "athlete": "Maguila dos dardos",
+            "value": 62.35,
+            "unit_measurement": "m"
+        }
+    }
+]
