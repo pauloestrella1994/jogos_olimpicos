@@ -8,6 +8,7 @@ class SwimmingCompetition(models.Model):
     competition_name = models.CharField(max_length=200, null=False, blank=False)
     start_date = models.DateField(null=False, blank=False, default=str(datetime.now().date()))
     end_date = models.DateField(null=True, blank=True)
+    results = models.CharField(max_length=20, null=False, blank=False, default="partial_result")
 
 class SwimmingAthletes(models.Model):
     id = models.AutoField(primary_key=True, editable=False)
@@ -16,3 +17,5 @@ class SwimmingAthletes(models.Model):
     value = models.DecimalField(max_digits=6, decimal_places=3)
     unit_measurement = models.CharField(max_length=2)
 
+    class Meta:
+        ordering = ['value']
