@@ -47,10 +47,10 @@ class SwimmingCompetitionSerializer(serializers.ModelSerializer):
             try:
                 start_date = self.instance.start_date
             except:
-                raise serializers.DjangoValidationError("Competition can't be created without a start date")
+                raise serializers.DjangoValidationError("Competition can't be created without a start date.")
 
         if end_date is not None and start_date > end_date:
-            raise serializers.ValidationError("Start date competition can't be later then end date")
+            raise serializers.ValidationError("Start date competition can't be later then end date.")
         
         if end_date:
             with transaction.atomic():
