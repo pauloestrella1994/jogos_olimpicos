@@ -26,7 +26,7 @@ class SwimmingAthletesSerializer(serializers.ModelSerializer):
         return data
 
 class SwimmingCompetitionSerializer(serializers.ModelSerializer):
-    athletes = SwimmingAthletesSerializer(many=True, read_only=True, source='competition_id')
+    athletes_results = SwimmingAthletesSerializer(many=True, read_only=True, source='competition_id')
 
     class Meta:
         model = SwimmingCompetition
@@ -35,7 +35,8 @@ class SwimmingCompetitionSerializer(serializers.ModelSerializer):
             'competition_name',
             'start_date',
             'end_date',
-            'athletes',
+            'results',
+            'athletes_results',
         ]
     
     def validate(self, data):
