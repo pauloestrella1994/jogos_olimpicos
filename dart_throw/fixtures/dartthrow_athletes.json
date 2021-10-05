@@ -11,7 +11,7 @@
     },
     {
         "model": "dart_throw.DartThrowAthletes",
-        "pk": 1,
+        "pk": 2,
         "fields":{
             "competition": 1,
             "athlete": "Joao dos dardos",
@@ -21,7 +21,7 @@
     },
     {
         "model": "dart_throw.DartThrowAthletes",
-        "pk": 2,
+        "pk": 3,
         "fields":{
             "competition": 1,
             "athlete": "Michael dos dardos",
@@ -31,7 +31,7 @@
     },
     {
         "model": "dart_throw.DartThrowAthletes",
-        "pk": 2,
+        "pk": 4,
         "fields":{
             "competition": 1,
             "athlete": "Michael dos dardos",
@@ -41,7 +41,7 @@
     },
     {
         "model": "dart_throw.DartThrowAthletes",
-        "pk": 3,
+        "pk": 5,
         "fields":{
             "competition": 2,
             "athlete": "Robson dos dardos",
@@ -51,7 +51,7 @@
     },
     {
         "model": "dart_throw.DartThrowAthletes",
-        "pk": 3,
+        "pk": 6,
         "fields":{
             "competition": 2,
             "athlete": "Robson dos dardos",
@@ -61,7 +61,7 @@
     },
     {
         "model": "dart_throw.DartThrowAthletes",
-        "pk": 4,
+        "pk": 7,
         "fields":{
             "competition": 2,
             "athlete": "Usain Bolt dos dardos",
@@ -71,7 +71,7 @@
     },
     {
         "model": "dart_throw.DartThrowAthletes",
-        "pk": 4,
+        "pk": 8,
         "fields":{
             "competition": 2,
             "athlete": "Usain Bolt dos dardos",
@@ -81,7 +81,7 @@
     },
     {
         "model": "dart_throw.DartThrowAthletes",
-        "pk": 5,
+        "pk": 9,
         "fields":{
             "competition": 3,
             "athlete": "João das Neves dos dardos",
@@ -91,7 +91,7 @@
     },
     {
         "model": "dart_throw.DartThrowAthletes",
-        "pk": 5,
+        "pk": 10,
         "fields":{
             "competition": 3,
             "athlete": "João das Neves dos dardos",
@@ -101,7 +101,7 @@
     },
     {
         "model": "dart_throw.DartThrowAthletes",
-        "pk": 6,
+        "pk": 11,
         "fields":{
             "competition": 3,
             "athlete": "Maguila dos dardos",
@@ -111,7 +111,7 @@
     },
     {
         "model": "dart_throw.DartThrowAthletes",
-        "pk": 6,
+        "pk": 12,
         "fields":{
             "competition": 3,
             "athlete": "Maguila dos dardos",
