@@ -3,7 +3,8 @@
         "model": "swimming.SwimmingCompetition",
         "pk": 1,
         "fields":{
-            "competition_name": "100m classificatoria 1"
+            "competition_name": "100m classificatoria 1",
+            "start_date": "2021-09-04"
         }
     },
     {
