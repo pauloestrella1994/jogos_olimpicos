@@ -15,8 +15,14 @@ class DartThrowAthletesSerializer(serializers.ModelSerializer):
 
     def validate(self, data):
         competition_end_date = data["competition"].end_date
+        number_of_marks = DartThrowAthletes.objects.filter(competition=data["competition"].id, athlete=data["athlete"])
+ 
         if competition_end_date:
             raise serializers.ValidationError("The competition is over")
+        
+        if len(number_of_marks.values()) >= 3:
+            raise serializers.ValidationError("The athlete already has 3 marks in this competition")
+
         return data
 
 class DartThrowCompetitionSerializer(serializers.ModelSerializer):
