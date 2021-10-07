@@ -168,4 +168,4 @@ docker-compose run web python manage.py loaddata swimming_athletes.json
 
 Thats all folks, enjoy it!
 
-PS*: If you have any trouble to run the commands above, make sure you run with `sudo`.
+PS*: If you have any trouble to run the commands above in Linux, make sure you run with `sudo`.
