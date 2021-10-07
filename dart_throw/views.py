@@ -1,4 +1,6 @@
+import re
 from operator import itemgetter
+from django.core.exceptions import ValidationError
 from django.db.models.query import QuerySet
 from rest_framework import viewsets, generics
 from .models import DartThrowAthletes, DartThrowCompetition
@@ -21,7 +23,9 @@ class DartThrowPodiumView(generics.ListAPIView):
     serializer_class = DartThrowPodiumSerializer
 
     def get_queryset(self):
-        competition_id = int(str(self.request)[-4])
+        url = str(self.request)
+        validator = re.compile('\/\d+\/')
+        competition_id = int(validator.findall(url)[0].replace('/', ''))
         queryset = DartThrowAthletes.objects.filter(
             competition_id=competition_id
             ).values('value', 'athlete', 'unit_measurement').order_by('value')
