@@ -25,5 +25,9 @@ class DartThrowPodiumView(generics.ListAPIView):
         queryset = DartThrowAthletes.objects.filter(
             competition_id=competition_id
             ).values('value', 'athlete', 'unit_measurement').order_by('value')
-        data = sorted(list({i['athlete']:i for i in queryset}.values()), key=itemgetter('value'), reverse=True)
+        data = sorted(
+            list({i['athlete']:i for i in queryset}.values()), 
+            key=itemgetter('value'), 
+            reverse=True
+        )
         return data
