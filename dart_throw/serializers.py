@@ -1,5 +1,5 @@
 from django.db import transaction
-from rest_framework import serializers, validators
+from rest_framework import serializers
 from .models import DartThrowAthletes, DartThrowCompetition
 
 class DartThrowAthletesSerializer(serializers.ModelSerializer):

@@ -1,7 +1,5 @@
 import re
 from operator import itemgetter
-from django.core.exceptions import ValidationError
-from django.db.models.query import QuerySet
 from rest_framework import viewsets, generics
 from .models import DartThrowAthletes, DartThrowCompetition
 from .serializers import (
