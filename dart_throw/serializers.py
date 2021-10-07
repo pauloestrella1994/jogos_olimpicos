@@ -1,5 +1,5 @@
 from django.db import transaction
-from rest_framework import serializers
+from rest_framework import serializers, validators
 from .models import DartThrowAthletes, DartThrowCompetition
 
 class DartThrowAthletesSerializer(serializers.ModelSerializer):
@@ -63,3 +63,14 @@ class DartThrowCompetitionSerializer(serializers.ModelSerializer):
                 except:
                     raise serializers.DjangoValidationError("It is not possible to close a competition if there is not yet one.")
         return data
+
+
+class DartThrowPodiumSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = DartThrowAthletes
+        fields = [
+            'id',
+            'athlete',
+            'value',
+            'unit_measurement'
+        ]
