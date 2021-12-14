@@ -1,6 +1,6 @@
 # Olympic Games
 
-An API that provides data for two differents sports: Swimming and Dart Throw.
+API that provides data for two differents sports: Swimming and Dart Throw.
 
 In this API, you can add data from athletes and competitions and then return in a
 partial podium or final podium
